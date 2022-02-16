@@ -46,6 +46,7 @@ let hoursWorkedOnDate = (employeeRecord, dateOfTheForm) => {
    return (clockOut - clockIn)/100
 }
 
+// Using hoursWorkedOnDate, multiply the hours by the record's payRate to determine amount owed. Amount should be returned as a number.
 let wagesEarnedOnDate = (employeeRecord, dateOfTheForm) => {
    const payPerHour = parseInt(employeeRecord.payPerHour)
    const hoursWorked = hoursWorkedOnDate(employeeRecord, dateOfTheForm)
