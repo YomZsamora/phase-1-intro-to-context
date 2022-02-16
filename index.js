@@ -63,6 +63,7 @@ let allWagesFor = (employeeRecord) => {
    return employeeWages.reduce((total, wage) => total + wage)
 }
 
+// Using wagesEarnedOnDate, accumulate the value of all dates worked by the employee in the record 
 let calculatePayroll = (AllEmployeeRecords) => {
    return AllEmployeeRecords.reduce((previoutAmount, employee) => {
       return previoutAmount + allWagesFor(employee)
