@@ -17,6 +17,7 @@ let createEmployeeRecords = (employeesCardsData) => {
    })
 }
 
+// Employee's check in time provided date
 let createTimeInEvent = (employeeRecord, dateStamp) => {
    let [date, hour] = dateStamp.split(' ');
    employeeRecord.timeInEvents.push({
@@ -27,6 +28,7 @@ let createTimeInEvent = (employeeRecord, dateStamp) => {
    return employeeRecord
 }
 
+// Employee's check out time provided date
 let createTimeOutEvent = (employeeRecord, dateStamp) => {
    let [date, hour] = dateStamp.split(' ');
    employeeRecord.timeOutEvents.push({
