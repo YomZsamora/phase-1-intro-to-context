@@ -39,6 +39,7 @@ let createTimeOutEvent = (employeeRecord, dateStamp) => {
    return employeeRecord
 }
 
+// Given a date, find the number of hours elapsed between that date's timeInEvent and timeOutEvent
 let hoursWorkedOnDate = (employeeRecord, dateOfTheForm) => {
    let clockIn = employeeRecord.timeInEvents.find((e) => e.date == dateOfTheForm).hour
    let clockOut = employeeRecord.timeOutEvents.find((e) => e.date == dateOfTheForm).hour
