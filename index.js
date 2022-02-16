@@ -53,6 +53,7 @@ let wagesEarnedOnDate = (employeeRecord, dateOfTheForm) => {
    return payPerHour * hoursWorked
 }
 
+// Using wagesEarnedOnDate, accumulate the value of all dates worked by the employee in the record
 let allWagesFor = (employeeRecord) => {
    let employeeWages = []
    let datesWorked = employeeRecord.timeInEvents.map((e) => e.date)
